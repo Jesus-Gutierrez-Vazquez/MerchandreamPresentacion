@@ -27,7 +27,7 @@
 			@media (max-width: 768px) {
 				/* Asegura que el fondo sea blanco en pantallas móviles */
 				body, .reveal, .slides {
-					background-color: rgb(110, 212, 20) !important;
+					background-color: white !important;
 					color: black !important;
 				}
 		
@@ -36,18 +36,12 @@
 					background-color: white !important;
 					color: black !important;
 				}
-		
-				section:nth-of-type(1) {
-					background-color: rgb(255, 8, 226) !important;
-					color: white !important;
-				}
-				/* Fondo azul para las secciones específicas */
-				section:nth-of-type(2),
-				section:nth-of-type(4),
-				section:last-of-type {
+
+				.movil_custom {
 					background-color: #007bff !important;
 					color: white !important;
 				}
+		
 			}
 		</style>
     </head>
@@ -62,7 +56,7 @@
 					<h4 style="color: black;">Presentación muñecos personalizados</h4>
 				</section>
 
-                <section data-transition="slide" data-transition="slide" data-background="#007bff" data-background-transition="zoom" style="background-color: #007bff; color: white;">
+                <section class="movil_custom" data-transition="slide" data-transition="slide" data-background="#007bff" data-background-transition="zoom" style="background-color: #007bff; color: white;">
                     <h2 style="color: white;">Sobre nuestros muñecos</h2>
                     <p>
                         Son figuras de poliresina personalizadas con la imagen de los personajes, pintadas a mano y las cabezas móviles.
@@ -86,7 +80,7 @@
 				</section>
                 </section>
 
-                <section data-transition="concave" data-background="#007bff" data-background-transition="convex" style="background-color: #007bff; color: white;">
+                <section class="movil_custom" data-transition="concave" data-background="#007bff" data-background-transition="convex" style="background-color: #007bff; color: white;">
                     <h2 style="color: white;">Propuesta</h2>
                     <p>
                         Los diferentes tamaños de nuestros muñecos nos permite desarrollar diferentes vías de comercialización.
@@ -197,7 +191,7 @@
                     </ol>
                 </section>
 
-                <section style="text-align: center;" data-transition="slide" data-background="#007bff" data-background-transition="zoom" style="background-color: #007bff; color: white;">
+                <section class="movil_custom" style="text-align: center;" data-transition="slide" data-background="#007bff" data-background-transition="zoom" style="background-color: #007bff; color: white;">
 					<h1 style="color: white;">¡Hagámoslo Realidad!</h1>
 					<p style="color: white;">
 						Contáctanos para comenzar esta emocionante colaboración.
