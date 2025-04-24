@@ -26,19 +26,25 @@
 			/* Estilos específicos para dispositivos móviles */
 			@media (max-width: 768px) {
 				/* Fondo por defecto blanco */
-				body, .reveal, .slides {
+				body, .reveal, .slides, section {
 					background-color: white !important;
 					color: black !important;
 				}
 		
-				/* Fondo blanco para todas las secciones por defecto */
-				section {
-					background-color: white !important;
-					color: black !important;
+				/* Fondo azul para la sección 2 */
+				.slides section:nth-of-type(2) {
+					background-color: #007bff !important;
+					color: white !important;
 				}
 		
-				/* Fondo azul para secciones específicas */
-				section[style*="background-color: #007bff"] {
+				/* Fondo azul para la sección 4 */
+				.slides section:nth-of-type(4) {
+					background-color: #007bff !important;
+					color: white !important;
+				}
+		
+				/* Fondo azul para la última sección */
+				.slides section:last-of-type {
 					background-color: #007bff !important;
 					color: white !important;
 				}
