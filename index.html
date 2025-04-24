@@ -21,6 +21,31 @@
 
         <!-- Theme used for syntax highlighting of code -->
         <link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+		<style>
+			/* Estilos específicos para pantallas móviles */
+			@media (max-width: 768px) {
+				/* Asegura que el fondo sea blanco en pantallas móviles */
+				body, .reveal, .slides {
+					background-color: white !important;
+					color: black !important;
+				}
+		
+				/* Asegura que las secciones específicas mantengan su estilo */
+				section {
+					background-color: white !important;
+					color: black !important;
+				}
+		
+				/* Fondo azul para las secciones específicas */
+				section:nth-of-type(2),
+				section:nth-of-type(4),
+				section:last-of-type {
+					background-color: #007bff !important;
+					color: white !important;
+				}
+			}
+		</style>
     </head>
 
     <body>
