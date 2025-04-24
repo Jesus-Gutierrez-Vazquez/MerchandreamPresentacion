@@ -31,6 +31,21 @@
 				}
 			}
 		</style>
+		<style>
+			/* Fondo por defecto blanco */
+			body, .reveal, .slides, section {
+				background-color: white;
+				color: black;
+			}
+
+			/* Asegura que las secciones con fondo azul mantengan su color en pantallas pequeñas */
+			@media (max-width: 768px) {
+				section[style*="background-color: #007bff"] {
+					background-color: #007bff !important;
+					color: white !important;
+				}
+			}
+		</style>
     </head>
 
     <body>
