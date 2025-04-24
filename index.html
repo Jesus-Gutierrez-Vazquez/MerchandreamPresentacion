@@ -23,23 +23,21 @@
         <link rel="stylesheet" href="plugin/highlight/monokai.css">
 
 		<style>
-			/* Asegura que el fondo azul se aplique en pantallas pequeñas */
+			/* Estilos específicos para dispositivos móviles */
 			@media (max-width: 768px) {
-				section[style*="background-color: #007bff"] {
-					background-color: #007bff !important;
-					color: white !important;
+				/* Fondo por defecto blanco */
+				body, .reveal, .slides {
+					background-color: white !important;
+					color: black !important;
 				}
-			}
-		</style>
-		<style>
-			/* Fondo por defecto blanco */
-			body, .reveal, .slides, section {
-				background-color: white;
-				color: black;
-			}
-
-			/* Asegura que las secciones con fondo azul mantengan su color en pantallas pequeñas */
-			@media (max-width: 768px) {
+		
+				/* Fondo blanco para todas las secciones por defecto */
+				section {
+					background-color: white !important;
+					color: black !important;
+				}
+		
+				/* Fondo azul para secciones específicas */
 				section[style*="background-color: #007bff"] {
 					background-color: #007bff !important;
 					color: white !important;
